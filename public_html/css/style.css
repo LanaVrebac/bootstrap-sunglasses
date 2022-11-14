@@ -1,0 +1,265 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 3, 2019, 12:19:01 PM
+    Author     : frontend
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap');
+
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;*/
+
+img{
+    max-width: 100%;}
+
+body{
+    color:#2C2D3C;
+font-family: 'Roboto', sans-serif;}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6{
+font-family: 'Playfair Display', serif;
+font-weight: 700;
+}
+
+p{font-size:16px;
+line-height: 26px;}
+
+.bg-sunglasses{
+   background-color:#EBB970;
+}
+
+.navbar-brand{max-width:50%;}
+
+.navbar-toggler span{
+    width:30px;
+    height: 3px;
+    margin-bottom: 5px;
+    display:block;
+    background-color: #000;
+}
+.navbar-toggler span:last-of-type{
+    margin-bottom: 0;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.46px;
+    color:#2C2D3C;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover{
+    border-bottom: 2px solid #2C2D3C;
+}
+
+.lead-section .carousel-item{
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0px;
+    
+}
+.lead-section .carousel-item .caption{
+    width:70%;
+    max-width: 458px;
+}
+
+.carousel-indicators li {
+  transition: none;
+}
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 15px;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: flex-start;
+  padding-left: 0;
+  margin-right: 0%;
+  margin-left: 0%;
+  list-style: none;
+}
+
+.carousel-indicators li {
+ 
+  width: 11px;
+  height: 11px;
+  margin-right: 19px;
+  margin-left:0;
+  
+  background-color: #2C3D2C;
+  
+  border-top: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+  border-radius: 50%;
+}
+
+.section-title:after{
+    content:'';
+    height:2px;
+    width: 90px;
+    background-color: #EBB970;
+    display:block;
+    position: relative;
+    margin-top: 22px;
+}
+
+.section-title.text-center:after{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.services .services-item{
+    box-shadow: 0 12px 13px 0 rgba(145,145,145,0.5);
+    transition: 0.15s linear;
+    position: relative;
+    bottom:0;
+}
+.services .services-item:hover{
+    bottom: 10px;
+}
+.services .services-item .fa-solid{
+    width: 88px;
+    height: 88px;
+    line-height: 88px;
+    font-size: 3rem;
+}
+
+.achievments{
+    padding:100px 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+}
+.achievments .achievments-item h3{
+    font-size:3rem;
+    
+}
+
+.products .product-item .product-caption{
+    left:10px;
+    right:10px;
+    bottom:10px;
+    display:none;
+}
+.products .product-item:hover .product-caption{
+    display:block;
+}
+.products .product-item img{
+    width:100%;
+    display:block;
+    transition:all 0.5s linear;
+}
+.products .products-item:hover img{
+    transform: scale(1.2);
+}
+
+.contact .contact-content p{font-size: 16px;}
+
+.social .fa-brands{
+    color:#2c2d3c;
+    font-size: 1.5rem;
+    margin: 0 5px;
+    text-decoration: none;
+    transition:1s linear;
+}
+.social .fa-brands:hover{transform:rotate(360deg);}
+
+@keyframes slideLeft{
+    0%{
+        opacity:0;
+        transform:translateX(50px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+
+.slide-left{
+    animation: slideLeft 1s linear;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes slideRight{
+    0%{
+        opacity:0;
+        transform:translateX(-50px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+
+.slide-right{
+    animation: slideRight 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideTop{
+    0%{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
+
+.slide-top{
+    animation: slideTop 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideBottom{
+    0%{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
+
+.slide-bottom{
+    animation: slideBottom 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom{
+    0%{opacity:0;
+    transform:scale(0);}
+    100%{opacity:1;
+    transform:scale:(1);}
+}
+.zoom{
+  animation:  zoom 1s linear;
+   animation-fill-mode: forwards;
+}
+.animation{
+    position: relative;
+    opacity: 0;
+}
+.error-msg *{
+    font-size: 12px;
+    color:red;
+    font-style: italic;
+}
